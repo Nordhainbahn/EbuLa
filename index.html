@@ -12,68 +12,57 @@
     <img src="ebula_frame.png" class="frame-bg" alt="EbuLa Gehäuse">
 
     <div class="display-container">
-      
-      <div class="header-top">
-        <div class="box zugnr">10901</div>
-        <div class="box status">Fahrplan gültig!</div>
-        <div class="box datum">07.06.2018</div>
-        <div class="box uhrzeit" id="uhrzeit-field">07:02:59</div>
-      </div>
+      <img src="ebula_screen.png" class="screen-bg" alt="EbuLa Display">
 
-      <div class="header-sub">
-        <div class="sub-left">ab km 50,4: 80 km/h</div>
-        <div class="sub-right">Nächster Halt: Schladern (Sieg)</div>
-      </div>
-
-      <div class="timetable-container">
+      <div class="display-content">
         
-        <div class="ebula-row">
-          <div class="col-speed">120</div>
-          <div class="col-km">50,5</div>
-          <div class="col-station">Herchener Tunnel</div>
-          <div class="col-ankunft"></div>
-          <div class="col-abfahrt"></div>
+        <div class="header-row">
+          <span class="box-zug">10901</span>
+          <span class="box-status">Fahrplan gültig!</span>
+          <span class="box-datum">07.06.2018</span>
+          <span class="box-zeit" id="uhrzeit">07:02:59</span>
         </div>
 
-        <div class="ebula-row">
-          <div class="col-speed"></div>
-          <div class="col-km">50,0</div>
-          <div class="col-station">Asig <span class="signal-code">A60</span></div>
-          <div class="col-ankunft"></div>
-          <div class="col-abfahrt"></div>
+        <div class="timetable">
+          <div class="row">
+            <span class="col-speed">120</span>
+            <span class="col-km">50,5</span>
+            <span class="col-station">Herchener Tunnel</span>
+          </div>
+          <div class="row">
+            <span class="col-speed"></span>
+            <span class="col-km">50,0</span>
+            <span class="col-station">Asig <span class="sig">A60</span></span>
+          </div>
+          <div class="row">
+            <span class="col-speed"></span>
+            <span class="col-km">49,8</span>
+            <span class="col-station bold">Herchen</span>
+            <span class="col-ank">07:03.3</span>
+            <span class="col-abf">07:04.0</span>
+          </div>
+          <div class="row">
+            <span class="col-speed">100</span>
+            <span class="col-km">43,0</span>
+            <span class="col-station bold">Eitorf</span>
+            <span class="col-ank">06:58.3</span>
+            <span class="col-abf">06:59.0</span>
+          </div>
         </div>
 
-        <div class="ebula-row">
-          <div class="col-speed"></div>
-          <div class="col-km">49,8</div>
-          <div class="col-station station-bold">Herchen</div>
-          <div class="col-ankunft">07:03.3</div>
-          <div class="col-abfahrt">07:04.0</div>
-        </div>
-
-        <div class="ebula-row">
-          <div class="col-speed">100</div>
-          <div class="col-km">43,0</div>
-          <div class="col-station station-bold">Eitorf</div>
-          <div class="col-ankunft">06:58.3</div>
-          <div class="col-abfahrt">06:59.0</div>
+        <div class="footer-row">
+          <button class="softkey-btn">Zug</button>
+          <button class="softkey-btn">FSD</button>
+          <button class="softkey-btn">LW</button>
+          <button class="softkey-btn">GW</button>
+          <button class="softkey-btn">Zeit</button>
+          <button class="softkey-btn right-btn">G</button>
         </div>
 
       </div>
-
-      <div class="footer-bar">
-        <div class="softkey-group">
-          <button class="softkey">Zug</button>
-          <button class="softkey">FSD</button>
-          <button class="softkey">LW</button>
-          <button class="softkey">GW</button>
-          <button class="softkey">Zeit</button>
-        </div>
-        <button class="softkey">G</button>
-      </div>
-
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
