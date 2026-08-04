@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-/* DEIN ORIGINALES GERÄTE-GERÜST (Unverändert) */
+/* DEIN GEHÄUSE-GERÜST */
 .ebula-device {
   position: relative;
   width: 900px;
@@ -50,63 +50,91 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4px;
+  padding: 3px 5px;
   color: #000;
   font-weight: bold;
 }
 
-/* KOPFZEILE (Ausrichtung an die 4 oberen Kästchen) */
+/* 1. KOPFZEILE (Exakt in den 4 Kästchen oben) */
 .header-row {
   display: flex;
-  font-size: 0.85rem;
-  padding-top: 2px;
+  font-size: 0.82rem;
+  padding-top: 1px;
 }
 
-.head-col-1 { width: 15%; text-align: center; }
-.head-col-2 { width: 48%; text-align: center; }
-.head-col-3 { width: 18%; text-align: center; }
-.head-col-4 { width: 19%; text-align: center; }
+.head-col-1 { width: 16%; text-align: center; }
+.head-col-2 { width: 45%; text-align: center; }
+.head-col-3 { width: 19%; text-align: center; }
+.head-col-4 { width: 20%; text-align: center; }
 
-/* ZUSATZINFOZEILE */
+/* 2. INFOZEILE (Abstand zur Linie) */
 .sub-header-row {
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
-  padding: 2px 4px;
+  font-size: 0.72rem;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  padding: 0 4px;
 }
 
-/* FAHRPLAN TABELLE (Spalten an die Striche von ebula_screen.png angepasst) */
+/* 3. FAHRPLAN TABELLE (Exakte Spaltenaufteilung) */
 .timetable {
   flex-grow: 1;
-  margin-top: 8px;
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
 }
 
 .row {
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
 }
 
-.col-v       { width: 16%; text-align: center; }
-.col-km      { width: 10%; }
-.col-station { width: 49%; }
-.col-ank     { width: 12.5%; text-align: right; }
-.col-abf     { width: 12.5%; text-align: right; }
+/* Spalte 1: V-Max (ganz links im ersten Feld) */
+.col-v { 
+  width: 7%; 
+  text-align: left; 
+  padding-left: 2px;
+}
+
+/* Spalte 2: Kilometrierung (rechts im ersten Feld) */
+.col-km { 
+  width: 10%; 
+  text-align: right; 
+  padding-right: 4px;
+}
+
+/* Spalte 3: Bahnhof / Betriebsstelle (im großen Mittelfeld) */
+.col-station { 
+  width: 58%; 
+  padding-left: 8px; 
+}
+
+/* Spalte 4: Ankunftszeit (erstes schmales Feld rechts) */
+.col-ank { 
+  width: 12.5%; 
+  text-align: center; 
+}
+
+/* Spalte 5: Abfahrtszeit (zweites schmales Feld rechts) */
+.col-abf { 
+  width: 12.5%; 
+  text-align: center; 
+}
 
 .station-bold {
   font-weight: 900;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .sig-code {
   float: right;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
-/* FUSSZEILE */
+/* 4. FUSSZEILE */
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -124,6 +152,6 @@ body {
   border: 1px solid #333;
   padding: 1px 6px;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   cursor: pointer;
 }
