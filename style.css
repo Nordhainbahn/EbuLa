@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-/* DEIN GEHÄUSE-GERÜST */
+/* GEHÄUSE-GERÜST */
 .ebula-device {
   position: relative;
   width: 900px;
@@ -55,32 +55,31 @@ body {
   font-weight: bold;
 }
 
-/* 1. KOPFZEILE (Exakt in den 4 Kästchen oben) */
+/* 1. KOPFZEILE (Exakt an die 4 Kästchen im Hintergrund angepasst) */
 .header-row {
   display: flex;
   font-size: 0.82rem;
-  padding-top: 1px;
+  padding-top: 2px;
 }
 
-.head-col-1 { width: 16%; text-align: center; }
-.head-col-2 { width: 45%; text-align: center; }
-.head-col-3 { width: 19%; text-align: center; }
-.head-col-4 { width: 20%; text-align: center; }
+.head-col-1 { width: 14%; text-align: center; }
+.head-col-2 { width: 47%; text-align: center; } /* Schiebt "Fahrplan gültig!" sauber nach rechts */
+.head-col-3 { width: 21%; text-align: center; } /* Schiebt das Datum exakt ins 3. Kästchen */
+.head-col-4 { width: 18%; text-align: center; } /* Uhrzeit im 4. Kästchen */
 
-/* 2. INFOZEILE (Abstand zur Linie) */
+/* 2. INFOZEILE (Nach unten verschoben) */
 .sub-header-row {
   display: flex;
   justify-content: space-between;
   font-size: 0.72rem;
-  margin-top: 3px;
-  margin-bottom: 2px;
-  padding: 0 4px;
+  margin-top: 7px; /* Verschiebt den Text weg von der oberen schwarzen Linie nach unten */
+  padding: 0 6px;
 }
 
-/* 3. FAHRPLAN TABELLE (Exakte Spaltenaufteilung) */
+/* 3. FAHRPLAN TABELLE (Exakte Spaltenaufteilung für die Trennlinien) */
 .timetable {
   flex-grow: 1;
-  margin-top: 4px;
+  margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -92,33 +91,33 @@ body {
   font-size: 0.76rem;
 }
 
-/* Spalte 1: V-Max (ganz links im ersten Feld) */
+/* Spalte 1: Geschwindigkeiten (z.B. 120, 100) ganz links */
 .col-v { 
-  width: 7%; 
+  width: 6.5%; 
   text-align: left; 
   padding-left: 2px;
 }
 
-/* Spalte 2: Kilometrierung (rechts im ersten Feld) */
+/* Spalte 2: Kilometer (z.B. 50,5) vor der ersten vertikalen Linie */
 .col-km { 
-  width: 10%; 
+  width: 10.5%; 
   text-align: right; 
-  padding-right: 4px;
+  padding-right: 6px; 
 }
 
-/* Spalte 3: Bahnhof / Betriebsstelle (im großen Mittelfeld) */
+/* Spalte 3: Bahnhof & Signale (im mittleren breiten Bereich) */
 .col-station { 
-  width: 58%; 
-  padding-left: 8px; 
+  width: 58.5%; 
+  padding-left: 10px; 
 }
 
-/* Spalte 4: Ankunftszeit (erstes schmales Feld rechts) */
+/* Spalte 4: Ankunft (exakt im ersten rechten Kästchen) */
 .col-ank { 
-  width: 12.5%; 
+  width: 12%; 
   text-align: center; 
 }
 
-/* Spalte 5: Abfahrtszeit (zweites schmales Feld rechts) */
+/* Spalte 5: Abfahrt (exakt im zweiten rechten Kästchen) */
 .col-abf { 
   width: 12.5%; 
   text-align: center; 
